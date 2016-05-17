@@ -1,0 +1,6 @@
+C:\Users\qq\Desktop\ML\ML\bin\Debug\ML.exe.config
+C:\Users\qq\Desktop\ML\ML\obj\Debug\ML.csprojResolveAssemblyReference.cache
+C:\Users\qq\Desktop\ML\ML\bin\Debug\ML.exe
+C:\Users\qq\Desktop\ML\ML\bin\Debug\ML.pdb
+C:\Users\qq\Desktop\ML\ML\obj\Debug\ML.exe
+C:\Users\qq\Desktop\ML\ML\obj\Debug\ML.pdb
