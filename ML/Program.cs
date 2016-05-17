@@ -15,7 +15,7 @@ namespace ML
     {
         static void Main(string[] args)
         {
-            string strHtml = File.ReadAllText(@"C:\Users\qq\Documents\Tencent Files\602710492\FileRecv\index.html");
+            string strHtml = File.ReadAllText(@"F:\weps2007_data_1.1\traininig\web_pages\Elmo_Hardy\raw\000\index.html");
 
             //Regex regex1 = new Regex("<script((.|\n)+?)/script>", RegexOptions.IgnoreCase);
            // string strOutput = regex1.Replace(strHtml, "");//替换掉JS里面的function及其他
@@ -23,10 +23,10 @@ namespace ML
             Regex regex = new Regex("(<script((.|\n)+?)/script>)|(<(.|\n)+?>)", RegexOptions.IgnoreCase);
             string strOutput = regex.Replace(strHtml, "");//替换掉"<"和">"及之间的内容
 
-           // Regex regex2 = new Regex("{(.|\n)+?}", RegexOptions.IgnoreCase);
-           // strOutput = regex2.Replace(strHtml, "");//替换掉"<"和">"及之间的内容
 
             strOutput = strOutput.Replace("&nbsp;", "");
+            strOutput = strOutput.Replace("\n", " ");
+            strOutput = strOutput.Replace("\r", " ");
             Console.WriteLine(strOutput);
             File.WriteAllText(@"C: \Users\qq\Desktop\a.html", strOutput);
         
