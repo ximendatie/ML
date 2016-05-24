@@ -14,7 +14,7 @@ import sys
 #delete the lable
 def getData1():
 
-    f1=open('b.txt')
+    f1=open('index.index')
     s=f1.read();
 
     re_script=re.compile('<\s*script[^>]*>[^<]*<\s*/\s*script\s*>',re.I)#Script
